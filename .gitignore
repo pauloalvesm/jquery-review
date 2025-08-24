@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+
+*.swp
+
+/dist/
+/build/
+
+/vendor/
