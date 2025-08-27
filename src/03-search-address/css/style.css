@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --dark-color: #000;
+    --white-color: #FFF;
+    --primary-color: #00E5EE;
+    --success-color: #3BBF21;
+    --danger-color: #FF0000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+}
+
+.container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    user-select: none;
+    color: var(--primary-color);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.inputbox {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40px;
+}
+
+.inputbox label {
+    position: relative;
+    top: 0;
+    left: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+    transition: .5s;
+    cursor: text;
+}
+
+.inputbox input {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.inputbox input:focus,
+.inputbox input:valid {
+    height: 100%;
+}
+
+.inputbox input:focus+label,
+.inputbox input:valid+label {
+    top: -40px;
+    left: 0;
+}
+
+.container button {
+    justify-self: center;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: thin;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#search {
+    background-color: var(--dark-color);
+    color: var(--success-color);
+}
+
+#search:hover {
+    background-color: var(--success-color);
+    color: var(--white-color);
+}
+
+#clear {
+    background-color: var(--dark-color);
+    color: var(--danger-color);
+}
+
+#clear:hover {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+}
+
+#message {
+    text-align: center;
+    color: var(--danger-color); 
+    font-weight: bold;
+    margin-top: -20px; 
+    min-height: 20px;
+}
+
+footer {
+    color: var(--primary-color);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Address</title>
+    <link rel="icon" href="../../assets/icons/js.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 class="title">Search Address</h1>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="zipcode" required>
+                <label for="zipcode">Zip Code</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="streetAddress" required>
+                <label for="streetAddress">Street Address</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="neighborhood" required>
+                <label for="neighborhood">Neighborhood</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="city" required>
+                <label for="city">City</label>
+            </div>
+            <div class="inputbox">
+            <input type="text" id="state" required>
+            <label for="state">State</label>
+        </div>
+        </div>
+        <div class="row">
+            <button id="search">Search</button>
+            <button id="clear">Clear</button>
+        </div>
+        <p id="message"></p>
+    </main>
+
+    <script src="../../resources/js/jquery-3.7.1.min.js"></script>
+    <script src="js/search-address.js"></script>
+</body>
+
+</html>
