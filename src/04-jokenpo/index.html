@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="icon" href="../../assets/icons/js.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <h1>Jokenpô</h1>
+            
+            <div class="formJokenpo">
+                <h3>Player:</h3>
+                <img src="../../assets/images/pedra.png" alt="rock">
+                <img src="../../assets/images/papel.png" alt="paper">
+                <img src="../../assets/images/tesoura.png" alt="scissors">  
+            </div>
+
+            <form class="formJokenpo" name="frmJokenpo">
+                <div class="formBody">
+                    <input class="textJokenpo" type="radio" name="group" id="rock">Rock
+                    <input class="textJokenpo" type="radio" name="group" id="paper">Paper
+                    <input class="textJokenpo" type="radio" name="group" id="scissors">Scissors
+                    <p class="buttonGroup">
+                        <input id="btnPlay" class="btn-base btn-play" type="button" value="PLAY">
+                        <input id="btnReset" class="btn-base btn-reset" type="reset" value="RESET">
+                    </p>
+                </div>
+            </form>
+    
+            <hr>
+            
+            <div class="formJokenpo">
+                <h3>Computer:</h3>
+                <img src="../../assets/images/pc.png" alt="PC" id="pc">
+            </div>
+            
+            <hr>
+    
+            <h3 id="score"></h3>
+        </div>
+    </main>
+
+    <script src="../../resources/js/jquery-3.7.1.min.js"></script>
+    <script src="js/jokenpo.js"></script>
+</body>
+</html>
