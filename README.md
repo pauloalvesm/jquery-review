@@ -11,6 +11,18 @@
 
 Repository with a list of web applications to review Javascript with JQuery concepts.
 
+## 📕 Note
+
+- This repository may receive more projects in the future
+
+## 📌 Technical Decisions
+
+- I've defined a basic structure that is also focused on organization.
+
+- I've chosen to develop projects at an entry level.
+
+- In the development process, I've opted to apply cleaner and more readable code.
+
 ## 🚀 Technologies and Tools
 
 This project was developed using the following technologies:
@@ -20,6 +32,17 @@ This project was developed using the following technologies:
   - `CSS`
   - `JavaScript`
   - `JQuery`
+  - `Ajax` 
+  - `ViaCEP API`
+  - `OpenWeatherMap API`
+
+ 
+## 📓 Project List
+- [01-to-do-list](https://github.com/pauloalvesm/jquery-review/tree/master/src/01-to-do-list)
+- [02-weather-forecast](https://github.com/pauloalvesm/jquery-review/tree/master/src/02-weather-forecast)
+- [03-search-address](https://github.com/pauloalvesm/jquery-review/tree/master/src/03-search-address)
+- [04-jokenpo](https://github.com/pauloalvesm/jquery-review/tree/master/src/04-jokenpo)
+- [05-drum-kit](https://github.com/pauloalvesm/jquery-review/tree/master/src/05-drum-kit)
 
   ## 💾 How to Run Locally
 
